@@ -45,7 +45,7 @@ setup_vendor "$DEVICE_COMMON-$BITS" "$VENDOR" "$LINEAGE_ROOT" true
 if [ "$BITS" == "32" ]; then
     write_headers "r5 r7"
 else
-    write_headers "f1f r7plus r7sf"
+    write_headers "A37f f1f r7plus r7sf"
 fi
 
 write_makefiles "$MY_DIR"/proprietary-files-$BITS.txt

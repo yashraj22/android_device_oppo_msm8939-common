@@ -56,7 +56,7 @@ BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_CMDLINE := console=none androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --tags_offset 0x00000100
-TARGET_KERNEL_SOURCE := kernel/oppo/msm8939
+TARGET_KERNEL_SOURCE := kernel/oppo/A37f
 ifneq ($(FORCE_32_BIT),true)
 BOARD_KERNEL_IMAGE_NAME := Image-dtb
 else
@@ -113,7 +113,7 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8939
 TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 
 # Lights
-TARGET_PROVIDES_LIBLIGHT := true
+TARGET_PROVIDES_LIBLIGHT := false
 
 # Lineage Hardware
 BOARD_HARDWARE_CLASS += $(COMMON_PATH)/lineagehw
